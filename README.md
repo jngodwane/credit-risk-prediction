@@ -83,6 +83,12 @@ Interactive Streamlit dashboard allows users to:
 - Predict default probability
 - Interpret results in business terms
 
+## 📸 Dashboard Preview
+
+Below is a preview of the interactive credit risk dashboard:
+
+![Dashboard Preview](images/dashboard-preview.png)
+
 ---
 
 ## 📸 Dashboard Preview
