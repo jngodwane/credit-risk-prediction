@@ -1,72 +1,94 @@
-\# Credit Risk Prediction
+# 💳 Credit Risk Prediction & Explainability Dashboard
 
+## 🚀 Overview
+This project builds an end-to-end **credit risk prediction system** that estimates the probability of borrower default using financial, behavioural, and engineered features.
 
+It includes:
+- Feature engineering (domain-driven)
+- Machine learning model (Random Forest)
+- Model evaluation (ROC-AUC, classification metrics)
+- Explainability using SHAP
+- Interactive Streamlit dashboard
 
-\## Overview
+---
 
-This project predicts borrower default risk using financial, behavioural, and engineered credit risk features.
+## 🧠 Business Problem
+Financial institutions need to assess borrower risk before approving loans.
 
+Poor decisions lead to:
+- Increased default rates
+- Financial losses
+- Poor capital allocation
 
+This project helps:
+👉 Identify high-risk borrowers  
+👉 Improve approval decisions  
+👉 Support risk-based pricing  
 
-\## Business Problem
+---
 
-Lenders need to identify high-risk applicants before granting loans.
+## ⚙️ Key Features Engineered
 
+### 💸 Affordability
+- Debt-to-Income Ratio
+- Loan-to-Income Ratio
+- Payment-to-Income Ratio
 
+### 💳 Utilization
+- Credit Utilization Ratio
 
-\## Features
+### ⚠️ Behaviour
+- Delinquency Frequency
+- Delinquency Flag
 
-The project includes:
+### 🔍 Credit Activity
+- Inquiry Rate
 
-\- loan\_to\_income\_ratio
+### 🧑‍💼 Stability
+- Employment Stability
+- Employment Buckets
 
-\- debt\_to\_income\_ratio
+### 🧠 Composite Risk Scores
+- Financial Stress Score
+- Behavioral Risk Score
 
-\- credit\_utilization\_ratio
+### 🔗 Interaction Features
+- Loan × Utilization
+- Affordability × Debt Stress
 
-\- payment\_to\_income\_ratio
+---
 
-\- delinquency\_frequency
+## 📊 Model Performance
 
-\- has\_delinquency\_flag
+- Model: Random Forest Classifier
+- Metric: ROC-AUC
+- Handles class imbalance using `class_weight="balanced"`
 
-\- credit\_inquiry\_rate
+---
 
-\- employment\_stability\_flag
+## 🔍 Explainability (SHAP)
 
-\- employment\_years\_bucket
+The project uses SHAP to:
+- Identify most important features
+- Explain model predictions
+- Improve transparency for stakeholders
 
-\- financial\_stress\_score
+---
 
-\- behavioral\_risk\_score
+## 🖥️ Dashboard
 
-\- loan\_income\_utilization\_interaction
+Interactive Streamlit dashboard allows users to:
+- Input borrower data
+- View engineered features
+- Predict default probability
+- Interpret results in business terms
 
-\- affordability\_stress\_interaction
+---
 
+## 📸 Dashboard Preview
 
+![Dashboard](outputs/figures/dashboard.png)
 
-\## Project Structure
+---
 
-\- `src/` model code
-
-\- `app/` Streamlit dashboard
-
-\- `data/raw/` input data
-
-\- `outputs/models/` saved model
-
-\- `outputs/figures/` charts
-
-
-
-\## How to Run
-
-
-
-\### Train
-
-```bash
-
-python src/train.py
-
+## 🏗️ Project Structure
